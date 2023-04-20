@@ -1,8 +1,6 @@
 <template>
 	<div class="home">
-	<uni-nav-bar statusBar left-text="向左" right-text="向右" left-icon ="left" right-icon="right"  title="首页" dark></uni-nav-bar>
-	<view @tap="goDetail">点击跳转</view>
-	
+    <hx-search></hx-search>
 	</div>
 </template>
 
@@ -18,7 +16,7 @@ export default {
 	methods: {
 		goDetail(){
 			uni.navigateTo({
-				url:'detail'
+				url:'/pages/index/detail?naumber=234'
 			})
 		}
 	},

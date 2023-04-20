@@ -6,6 +6,9 @@
 		onShow: function() {
 			console.log('App Show')
 		},
+		// #ifdef MP
+		
+		// #endif
 		onHide: function() {
 			console.log('App Hide')
 		}
@@ -14,5 +17,5 @@
 
 <style lang='scss'>
 	/*每个页面公共css */
-	// @import './uni.scss'
+	@import './style/icon.css'
 </style>

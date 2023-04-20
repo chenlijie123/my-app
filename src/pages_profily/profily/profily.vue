@@ -1,16 +1,10 @@
 <template>
-  <div class="pages">
-    1111111111111
-    <Notes></Notes>
-  </div>
+  <div class="profily">profily1231</div>
 </template>
 
 <script>
-import Notes from '../../components/notes'
 export default {
-  components: {
-    Notes
-    },
+  components: {},
   data () {
     return {
 
