@@ -17,5 +17,6 @@
 
 <style lang='scss'>
 	/*每个页面公共css */
-	@import './style/icon.css'
+	@import './style/icon.css';
+	@import './style/theme.scss';
 </style>
