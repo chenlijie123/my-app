@@ -38,7 +38,6 @@ export default {
   white-space: nowrap;
   width: 100%;
   overflow-x: auto;
-  background-color: blue;
 }
 
 .scroll-view-item_H {

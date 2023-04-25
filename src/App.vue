@@ -19,4 +19,5 @@
 	/*每个页面公共css */
 	@import './style/icon.css';
 	@import './style/theme.scss';
+  @import './style/theme.css'
 </style>

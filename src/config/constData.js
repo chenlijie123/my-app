@@ -3,7 +3,7 @@ export default{
   themeList: [
   			{
   				title: '官方',
-  				name: 'rf',
+  				name: 'hx',
   				color: '#fa436a',
   				tabList: [
   					'/static/tab-home-rf.png',
@@ -181,7 +181,49 @@ export default{
   					'/static/tab-my-black.png'
   				]
   			}
-  		]
+  		],
   
+  
+// 设置-设置中心
+  setList: [
+  	{
+  		title: '个人资料',
+  		url: '/pages/user/userinfo/userinfo',
+  		content: ''
+  	},
+  	{
+  		title: '修改密码',
+  		url: '/pages/public/password?type=1',
+  		content: ''
+  	},
+  	{
+  		title: '授权管理',
+  		url: '/pages/set/authorization/list',
+  		content: ''
+  	},
+  	{
+  		title: '发票管理',
+  		url: '/pages/set/invoice/invoice',
+  		content: '',
+  		class: 'mT'
+  	},
+  	{ title: '开票历史', url: '/pages/set/invoice/list', content: '' },
+  	{ title: '清除缓存', url: 'clearCache', content: '' },
+  	{
+  		title: '关于商城',
+  		url: '/pages/set/about/about',
+  		content: '',
+  		class: 'mT'
+  	},
+  	{
+  		title: '站点帮助',
+  		url: '/pages/set/helper/index',
+  		content: ''
+  	},
+  	/*  #ifdef APP-PLUS  */
+  	{ title: '检查更新', url: 'versionUpgrade', content: '' },
+  	/*  #endif  */
+  	{ title: '意见反馈', url: '/pages/set/feedback/list', content: '' }
+  ],
   
 }

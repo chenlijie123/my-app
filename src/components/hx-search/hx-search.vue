@@ -34,7 +34,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 20rpx;
-    background-color: aqua;
   }
   .searchBox{
     line-height: 60rpx;
