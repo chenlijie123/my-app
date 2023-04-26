@@ -1,6 +1,6 @@
 <template>
-    <scroll-view class="scroll-view_H" scroll-x="true">
-      <view v-for="(item,index) in cateList" :key="index" class="scroll-view-item_H uni-bg-red" :class="{active:itemIndex === index}" @tap="tapActive(index)">
+    <scroll-view v-if="cateList.length" class="scroll-view_H" scroll-x="true">
+      <view v-for="(item,index) in cateList" :key="index" class="scroll-view-item_H uni-bg-red" :class="{active:itemIndex === index}" @tap="tapActive(index,item)">
         {{ item }}
       </view>
     </scroll-view>
@@ -24,9 +24,11 @@ export default {
 
   },
   methods: {
-    tapActive(val) {
-      if (this.itemIndex !== val) this.itemIndex = val
-      console.log(val)
+    tapActive(val,item) {
+      if (this.itemIndex !== val) {
+        this.itemIndex = val
+        this.$emit('tapAction',{val,item})
+        }
     }
   }
 }

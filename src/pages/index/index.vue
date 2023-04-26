@@ -1,12 +1,11 @@
 <template>
   <div class="home">
     <view :class="`bg-${themeColor.name}`">
-      <hx-search></hx-search>
-      <hx-category :cateList="cateList"></hx-category>
+      <hx-search @toSearch="toSearch"></hx-search>
+      <hx-category :cateList="cateList" @tapAction="cateActive"></hx-category>
     </view>
     
-    <button type="default" @click="setColor">通过方法跳转到about页面</button>
-    <view class=""> {{ themeColor }} </view>
+    <!-- <view class=""> {{ themeColor }} </view> -->
   </div>
 </template>
 
@@ -31,11 +30,19 @@ export default {
         url: '/pages/index/detail?naumber=234'
       })
     },
-    setColor() {
-      console.log();
+    
+    cateActive(item){
+      console.log("active===item: ",item);
+    },
+    // 搜索 跳转搜索页
+    toSearch(){
+      uni.navigateTo({
+        url:'/pages/search/search'
+      })
     }
   }
 }
 </script>
 <style lang="scss" scoped>
+  
 </style>

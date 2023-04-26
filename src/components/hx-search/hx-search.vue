@@ -1,13 +1,11 @@
 <template>
   <view>
      <view class="search">
-       <view class="searchBox">
+       <view class="searchBox" @tap="toSearch">
          <text class="iconfont icon-sousuo"></text>
-         <text>搜索</text>
+         <text class="m-l-20">搜索</text>
        </view>
-       <view class="icon iconfont icon-saoyisao">
-         
-       </view>
+       <view class="icon iconfont icon-saoyisao" @tap="richScan"></view>
      </view>
   </view>
 </template>
@@ -20,7 +18,14 @@
       }
     },
     methods: {
-      
+     toSearch(){
+       this.$emit('toSearch')
+       console.log('toSearch===搜索');
+     },
+    richScan () {
+      this.$emit('richScan')
+      console.log('扫一扫');
+    }
     }
   }
 </script>
@@ -42,6 +47,7 @@
     border-radius: 30rpx;
     background-color: #fff;
     text-indent: 20rpx;
+    color: #909399;
   }
   .icon {
     margin: 0 10rpx 0 20rpx;
