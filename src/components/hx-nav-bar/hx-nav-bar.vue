@@ -2,7 +2,7 @@
 	<view class="uni-navbar" :class="{'uni-dark':dark, 'uni-nvue-fixed': fixed}">
 		<view class="uni-navbar__content" :class="{ 'uni-navbar--fixed': fixed, 'uni-navbar--shadow': shadow, 'uni-navbar--border': border }"
 			:style="{ 'background-color': themeBgColor, 'border-bottom-color':themeColor }" >
-			<status-bar v-if="statusBar" />
+			<hx-status-bar v-if="statusBar" />
 			<view :style="{ color: themeColor,backgroundColor: themeBgColor ,height:navbarHeight}"
 				class="uni-navbar__header">
 				<view @tap="onClickLeft" class="uni-navbar__header-btns uni-navbar__header-btns-left"
@@ -48,7 +48,7 @@
 </template>
 
 <script>
-	import statusBar from "./components/uni-status-bar.vue";
+	// import statusBar from "../hx-status-bar/hx-status-bar.vue";
 	const getVal = (val) => typeof val === 'number' ? val + 'px' : val;
 
 	/**
@@ -76,7 +76,7 @@
 	export default {
 		name: "UniNavBar",
 		components: {
-			statusBar
+			// statusBar
 		},
 		emits: ['clickLeft', 'clickRight', 'clickTitle'],
 		props: {

@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <hx-status-bar></hx-status-bar>
     <view :class="`bg-${themeColor.name}`">
       <hx-search @toSearch="toSearch"></hx-search>
       <hx-category :cateList="cateList" @tapAction="cateActive"></hx-category>

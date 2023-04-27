@@ -6,59 +6,83 @@
         "navigationBarTitleText": "首页"
       }
     },
+    {
+      "path": "pages_category/category/category",
+      "style": {
+        "navigationBarTitleText": "分类"
+      }
+    },
+    {
+      "path": "pages_notify/notify/notify",
+      "style": {
+        "navigationBarTitleText": "消息"
+      }
+    },
+    {
+      "path": "pages_cart/cart/cart",
+      "style": {
+        "navigationBarTitleText": "购物车"
+      }
+    },
+    {
+      "path": "pages_profily/profily/profily",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    },
 		{
       "path": "pages/search/search",
       "style": {
-        // "navigationBarTitleText": "首页"
+        "navigationBarTitleText": "搜索"
       }
     }
   ],
 
   "subPackages": [
-    {
-      "root": "pages_category",
-      "pages": [
-        {
-          "path": "category/category",
-          "style": {
-            "navigationBarTitleText": "分类"
-          }
-        }
-      ]
-    },
-		{
-      "root": "pages_notify",
-      "pages": [
-        {
-          "path": "notify/notify",
-          "style": {
-            "navigationBarTitleText": "消息"
-          }
-        }
-      ]
-    },
-		{
-      "root": "pages_cart",
-      "pages": [
-        {
-          "path": "cart/cart",
-          "style": {
-            "navigationBarTitleText": "购物车"
-          }
-        }
-      ]
-    },
-		{
-      "root": "pages_profily",
-      "pages": [
-        {
-          "path": "profily/profily",
-          "style": {
-            "navigationBarTitleText": "我的"
-          }
-        }
-      ]
-    }
+  //   {
+  //     "root": "pages_category",
+  //     "pages": [
+  //       {
+  //         "path": "category/category",
+  //         "style": {
+  //           "navigationBarTitleText": "分类"
+  //         }
+  //       }
+  //     ]
+  //   },
+		// {
+  //     "root": "pages_notify",
+  //     "pages": [
+  //       {
+  //         "path": "notify/notify",
+  //         "style": {
+  //           "navigationBarTitleText": "消息"
+  //         }
+  //       }
+  //     ]
+  //   },
+		// {
+  //     "root": "pages_cart",
+  //     "pages": [
+  //       {
+  //         "path": "cart/cart",
+  //         "style": {
+  //           "navigationBarTitleText": "购物车"
+  //         }
+  //       }
+  //     ]
+  //   },
+		// {
+  //     "root": "pages_profily",
+  //     "pages": [
+  //       {
+  //         "path": "profily/profily",
+  //         "style": {
+  //           "navigationBarTitleText": "我的"
+  //         }
+  //       }
+  //     ]
+  //   }
   ],
 
   "globalStyle": {

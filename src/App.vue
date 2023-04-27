@@ -17,6 +17,7 @@
 
 <style lang='scss'>
 	/*每个页面公共css */
+  @import './style/animation.css';
 	@import './style/icon.css';
 	@import './style/theme.scss';
   @import './style/common.scss'
