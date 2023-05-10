@@ -1,9 +1,9 @@
 <template>
   <view>
      <view class="search">
-       <view class="searchBox" @tap="toSearch">
-         <text class="iconfont icon-sousuo"></text>
-         <text class="m-l-20">搜索</text>
+       <view class="searchBox flex-start" @tap="toSearch">
+         <text class="iconfont icon-sousuo" ></text>
+         <text>搜索</text>
        </view>
        <view class="icon iconfont icon-saoyisao" @tap="richScan"></view>
      </view>
@@ -41,7 +41,7 @@
     padding: 0 20rpx;
   }
   .searchBox{
-    line-height: 60rpx;
+    height: 60rpx;
     font-size: 14px;
     flex: 1;
     border-radius: 30rpx;

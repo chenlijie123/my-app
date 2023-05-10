@@ -4,7 +4,10 @@ const state={
 }
  
 const mutations ={
-  
+  setThemeColor(state,value) {
+    state.themeColor = value
+    uni.setStorageSync('themeColor',value)
+  }
 }
 const actions = {
    

@@ -28,3 +28,60 @@ $i: 100;
 }
 
 /* #endif */
+
+// flex box
+ .flex {
+   display: flex;
+   align-items: center;
+ }
+ 
+ .flex-start {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+ }
+ 
+ .flex-end {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+ }
+ 
+.flex-column {
+  display:flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+// 宽高默认
+.w-100 {
+  width: 100%;
+}
+.h-100 {
+  height: 100%;
+}
+.w-100vw {
+  width: 100vw;
+}
+.h-100vh {
+  height: 100vh;
+}
+
+// 

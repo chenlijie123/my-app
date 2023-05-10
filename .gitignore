@@ -24,3 +24,4 @@ build/
 .history
 .project
 .husky
+dist/

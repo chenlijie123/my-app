@@ -1,8 +1,18 @@
 <template>
+  <view class="">设置页</view>
 </template>
 
 <script>
-</script>
+export default {
+  components: {},
+  data () {
+    return {
 
-<style>
+    }
+  },
+  methods: {},
+  created () {}
+}
+</script>
+<style lang="scss" scoped>
 </style>
