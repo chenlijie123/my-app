@@ -9,12 +9,13 @@ Vue.config.productionTip = false
 App.mpType = 'app'
 
 Vue.mixin({
-  computed:{
-    themeColor:{
-      get(){
+  computed: {
+    themeColor: {
+      get () {
+        console.log('store.getters.themeColor', store.getters.themeColor);
         return store.getters.themeColor
       },
-      set(val){
+      set (val) {
         store.state.base.themeColor = val
       }
     }

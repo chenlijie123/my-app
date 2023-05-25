@@ -60,7 +60,21 @@
           }
         }
       ]
-    }
+    },
+    {
+      "root": "pages_public",
+      "pages": [
+        {
+          "path": "login"
+        },
+        {
+          "path": "logintype"
+        },
+        {
+          "path": "password"
+        }
+      ]
+    },
     // {
     //     "root": "pages_cart",
     //     "pages": [
@@ -72,17 +86,24 @@
     //       }
     //     ]
     //   },
-    // {
-    //     "root": "pages_profily",
-    //     "pages": [
-    //       {
-    //         "path": "profily/profily",
-    //         "style": {
-    //           "navigationBarTitleText": "我的"
-    //         }
-    //       }
-    //     ]
-    //   }
+    {
+      // 我的
+      "root": "pages_profily",
+      "pages": [
+        {
+          "path": "account/index"
+        },
+        {
+          "path": "indent/index"
+        },
+        {
+          "path": "footprint/index"
+        },
+        {
+          "path": "serve/index"
+        }
+      ]
+    }
   ],
 
   "globalStyle": {
